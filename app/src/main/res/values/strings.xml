@@ -1,11 +1,9 @@
 <resources>
-    <string name="app_name">Fitness Tracker</string>
+    <string name="app_name">METAPALL</string>
     <string name="weight">Weight</string>
     <string name="height">Height</string>
     <string name="age">age</string>
-    <string name="enter_weight">Enter Weight</string>
-    <string name="enter_height">Enter Height</string>
-    <string name="enter_age">Enter Age</string>
-    <string name="button">Button</string>
+    <string name="calculateBMI">Calculate BMI</string>
+    <string name="CHO_needs">CHO NEEDS</string>
 
 </resources>
