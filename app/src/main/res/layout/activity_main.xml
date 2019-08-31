@@ -1,60 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
     tools:context=".MainActivity">
 
-    <TextView
-        android:text="@string/weight"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="105dp"
-        android:layout_marginStart="155dp"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:text="@string/weight"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="130dp"
-        android:layout_marginStart="65dp"
-        android:ems="10"
-        android:gravity="center_horizontal"
-        android:inputType="number|numberDecimal"
-        android:textSize="20sp"
-        android:autofillHints="Enter Weight" />
 
     <TextView
-        android:text="@string/height"
+        android:id="@+id/textView"
+        android:text="METAPAL"
+        android:textSize="30dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="235dp"
-        android:layout_marginStart="155dp"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
 
     <EditText
-        android:text="@string/height"
+        android:id="@+id/userheight"
+        android:layout_width="158dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_alignRight="@+id/textView"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="-11dp"
+        android:layout_marginRight="-11dp"
+        android:ems="10"
+        android:hint="Enter Height"
+        android:gravity="center_horizontal"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/userweight"
+        android:layout_width="158dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_alignRight="@+id/textView"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="-10dp"
+        android:layout_marginRight="-10dp"
+        android:ems="10"
+        android:hint="Enter Weight"
+        android:gravity="center_horizontal"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/userage"
+        android:layout_width="158dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_alignRight="@+id/textView"
+        android:layout_marginTop="117dp"
+        android:layout_marginEnd="-11dp"
+        android:layout_marginRight="-11dp"
+        android:ems="10"
+        android:hint="Enter Age"
+        android:gravity="center_horizontal"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="185dp"
-        android:layout_marginStart="65dp"
-        android:ems="10"
-        android:gravity="center_horizontal"
-        android:inputType="number|numberDecimal"
-        android:textSize="20sp"
-        android:autofillHints="Enter Height" />
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="166dp"
+
+
+        android:text="CALCULATE" />
+
 </RelativeLayout>
