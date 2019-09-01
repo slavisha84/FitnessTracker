@@ -27,16 +27,16 @@ public class MainActivity extends AppCompatActivity {
         age = (EditText) findViewById(R.id.age);
         result = (TextView) findViewById(R.id.result);
     }
-    public void calculateBMI(View v) {
+    public void CalculateBMI(View v) {
         String heightStr = height.getText().toString();
         String weightStr = weight.getText().toString();
 
         if (heightStr != null && !"".equals(heightStr)&& weightStr != null && !"".equals(weightStr)) {
-            float heightValue = Float.parseFloat(heightStr)/100;
-            float weightValue = Float.parseFloat(weightStr);
+            double heightValue = Double.parseDouble(heightStr);
+            double weightValue = Double.parseDouble(weightStr);
 
-            float bmi =weightValue / (heightValue*heightValue);
-            result.setText("The result is: " + bmi);
+            double bmi = Math.round(((weightValue * 703) / (heightValue*heightValue))*100);
+            result.setText("YOUR BMI IS: " + bmi/100);
         }
     }
 }
